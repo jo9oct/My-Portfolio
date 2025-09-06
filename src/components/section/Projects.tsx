@@ -124,7 +124,6 @@ export const Projects = () => {
 
           </div>
 
-
                 <CardHeader>
                   <CardTitle className="flex items-center justify-between">
                     <span>{project.title}</span>
@@ -142,7 +141,7 @@ export const Projects = () => {
                     ))}
                   </div>
 
-                  <div className="flex space-x-2 pt-2">
+                  <div className="flex sm:space-x-2 pt-2 flex-col sm:flex-row sm:space-y-0 space-y-4">
                     {project.liveUrl !== "#" &&
                     <Button size="sm" onClick={() => {if(project.liveUrl !== "#"){window.open(project.liveUrl, "_blank")}}}
                             className="flex-1 rounded-2xl px-6 py-3 font-semibold text-black bg-indigo-600 hover:opacity-80 transition-opacity duration-300">

@@ -30,7 +30,7 @@ export const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
       <div className="mx-6 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Name */}
-          <div className="flex items-center ml-20">
+          <div className="flex items-center lg:ml-20 ml-0">
             <div className="flex-shrink-0 flex items-center space-x-2">
               <img src="/My-LOGO.png" alt="MY_LOGO" width={40} height={40} className="rounded-full"/>
               <h1
@@ -60,12 +60,12 @@ export const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
           </div>
 
           {/* Theme Toggle */}
-          <div className="flex items-center">
+          <div className="flex items-center space-x-2">
             <Button
               variant="ghost"
               size="sm"
               onClick={() => setDarkMode(!darkMode)}
-              className="glow-effect hover:bg-transparent mr-20"
+              className="glow-effect hover:bg-transparent lg:mr-20 mr-0 text-md-center"
             >
               {darkMode ? (
                 <Sun className="h-5 w-5 text-accent" />
@@ -77,7 +77,7 @@ export const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
             <Button
                 variant="ghost"
                 size="sm"
-                className="md:hidden ml-2"
+                className="md:hidden ml-md-2"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}

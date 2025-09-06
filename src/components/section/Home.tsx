@@ -4,10 +4,10 @@ import { TypeAnimation } from "react-type-animation";
 
 export function HeroSection() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden ">
       
-      <div className="relative z-10 container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 lg:grid-cols-2 gap-10 md:gap-6 sm:gap-4 items-center min-h-screen mx-6">
+      <div className="relative z-10 container mx-auto px-6 lg:mt-0 mt-20">
+        <div className="grid lg:grid-cols-2 lg:grid-cols-2 gap-10 md:gap-6 sm:gap-4 items-center min-h-screen mx-6 ">
           {/* Left side - Text and social icons */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -110,7 +110,7 @@ export function HeroSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2, delay: 0.3 }}
-            className="relative flex justify-center lg:justify-end"
+            className="relative flex justify-center lg:justify-end lg:mt-0 mt-80"
           >
             <div className="relative">
             <motion.img

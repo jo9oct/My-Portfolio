@@ -18,7 +18,7 @@ export const Footer = () => {
             </span>
           </div>
 
-          <div className="flex mb-5 items-center justify-center space-x-2 text-muted-foreground">
+          <div className="flex mb-5 items-center justify-center space-x-2 text-muted-foreground flex-wrap gap-2">
             <span className='whitespace-nowrap'>Built with</span>
             <motion.div
               animate={{ scale: [1, 1.2, 1] }}
@@ -29,7 +29,7 @@ export const Footer = () => {
             <span>React, TypeScript, and Tailwind CSS</span>
           </div>
           
-          <div className="flex items-center justify-center space-x-2 text-muted-foreground">
+          <div className="flex items-center justify-center space-x-2 text-muted-foreground flex-wrap gap-2">
             <span className='whitespace-nowrap'>© 2025 JO.Portfolio. Made with</span>
             <motion.div
               animate={{ scale: [1, 1.2, 1] }}

@@ -54,7 +54,7 @@ export const Contact = () => {
     <>
       <section id="contact" className="py-24 px-6 relative overflow-hidden">
         {/* Background Effects */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 " />
         
         <div className="container mx-auto relative">
           <motion.div
