@@ -212,7 +212,7 @@ export function HeroSection() {
           </motion.div>
         </div>
         
-        <div className='flex flex-row justify-center aligns-center'>
+        <div className='flex flex-row justify-center aligns-center lg:mt-0 mt-40'>
           <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
