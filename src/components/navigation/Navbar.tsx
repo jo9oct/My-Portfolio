@@ -32,7 +32,7 @@ export const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
           {/* Logo/Name */}
           <div className="flex items-center lg:ml-20 ml-0">
             <div className="flex-shrink-0 flex items-center space-x-2">
-              <img src="/My-LOGO.png" alt="MY_LOGO" width={40} height={40} className="rounded-full"/>
+              <img src="/My-LOGO.png" alt="MY_LOGO" loading='lazy' width={40} height={40} className="rounded-full"/>
               <h1
                 className="text-2xl font-bold text-transparent bg-clip-text 
                           bg-gradient-to-r from-purple-500 to-cyan-400 

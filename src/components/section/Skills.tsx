@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
-import { Code, Database, Wrench, Smartphone, TrendingUp } from "lucide-react";
+import { Code, Database, Wrench, Smartphone, TrendingUp, Cloud } from "lucide-react";
 import SkillsOvalCarousel from "@/components/subSection/Technology"
 
 // Skill categories
@@ -17,7 +17,7 @@ const skillCategories = {
       { name: "JavaScript", level: 90 },
       { name: "TypeScript", level: 90 },
       { name: "React", level: 92 },
-      { name: "Next.js", level: 70 },
+      { name: "Next.js", level: 85 },
       { name: "Tailwind CSS", level: 85 },
       { name: "Bootstrap", level: 93 },
     ],
@@ -32,14 +32,25 @@ const skillCategories = {
       { name: "Express.js", level: 99 },
     ],
   },
+  Serverless: {
+    title: "Cloud/Serverless",
+    icon: Cloud,
+    skills: [
+      { name: "Vercel", level: 80 },
+      { name: "AWS Lambda", level: 80 },
+      { name: "Firebase", level: 85 },
+      { name: "Inngest", level: 80 },
+    ],
+  },
   tools: {
     title: "Tools",
     icon: Wrench,
     skills: [
       { name: "Git", level: 93 },
+      { name: "Figma", level: 95 },
+      { name: "Postmen", level: 90 },
       { name: "Docker", level: 80 },
-      { name: "AWS", level: 80 },
-      { name: "Figma", level: 98 },
+      { name: "Clerk", level: 90 },
     ],
   },
   mobile: {
@@ -123,6 +134,7 @@ export const Skills = () => {
                 <img 
                   src="/design.png" 
                   alt="Design" 
+                  loading='lazy'
                   className="w-16 h-16 rounded-full object-cover" 
                   style={{ animationDelay: '2s' }}
                 />
@@ -133,6 +145,7 @@ export const Skills = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=100&h=100&fit=crop&crop=center" 
                   alt="Coding" 
+                  loading='lazy'
                   className="w-16 h-16 rounded-full object-cover"
                 />
               </div>
@@ -140,7 +153,7 @@ export const Skills = () => {
           </motion.div>
 
           {/* Category Buttons */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12">
             {Object.entries(skillCategories).map(([key, category]) => {
               const Icon = category.icon;
               const isSelected = selectedCategory === key;

@@ -106,6 +106,7 @@ export const Testimonials = () => {
                     <img 
                       src={person.avatar} 
                       alt={person.name}
+                      loading='lazy'
                       className="w-full h-full object-cover"
                     />
                   </div>

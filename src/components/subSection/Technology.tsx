@@ -61,6 +61,7 @@ export default function SkillsOvalCarousel() {
               src={skill.src}
               alt={skill.alt}
               draggable={false}
+              loading='lazy'
               className="absolute transition-all duration-75"
               style={{
                 left: x,

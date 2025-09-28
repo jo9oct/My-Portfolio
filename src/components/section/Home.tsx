@@ -35,6 +35,8 @@ export function HeroSection() {
                   2000,
                   "FrontEnd Developer", 
                   2000,
+                  "Cloud & Serverless Developer", 
+                  2000,
                   "UI/UX Designer", 
                   2000,
                   "Mobile App Developer", 
@@ -120,6 +122,7 @@ export function HeroSection() {
               transition={{ duration: 1.2, delay: 0.5 }}
               src="/I.png"
               alt="Jo Anderson"
+              loading='lazy'
               className="w-[22rem] h-[22rem] sm:w-96 sm:h-96 md:w-[28rem] md:h-[28rem] object-cover rounded-full shadow-2xl"
               style={{
                 filter: 'drop-shadow(0 0 40px rgba(139, 92, 246, 0.4))',
@@ -223,7 +226,7 @@ export function HeroSection() {
                 <a href="https://github.com/jo9oct" target='__blank' className="glow-hover p-3 rounded-full border border-muted hover:scale-110 transition-all duration-500">
                   <Github className="w-6 h-6" />
                 </a>
-                <a href="https://www.linkedin.com/in/yohannis-hailye-433065339/" target='__blank' className="glow-hover p-3 rounded-full border border-muted hover:scale-110 transition-all duration-500">
+                <a href="https://www.linkedin.com/in/yohannis-h-433065339" target='__blank' className="glow-hover p-3 rounded-full border border-muted hover:scale-110 transition-all duration-500">
                   <Linkedin className="w-6 h-6" />
                 </a>
                 <a onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}

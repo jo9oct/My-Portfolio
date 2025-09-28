@@ -237,10 +237,10 @@ export const Contact = () => {
                 <div className="flex space-x-4">
                   {[
                     { icon: Github, href: 'https://github.com/jo9oct', label: 'GitHub' },
-                    { icon: Linkedin, href: 'https://www.linkedin.com/in/yohannis-hailye-433065339/', label: 'LinkedIn' },
+                    { icon: Linkedin, href: 'https://www.linkedin.com/in/yohannis-h-433065339', label: 'LinkedIn' },
                     { icon: MessageCircle, href: 'https://t.me/coderJo21', label: 'Telegram' },
                     { icon: Instagram, href: 'https://instagram.com/jo9oct', label: 'Instagram' },
-                    { icon: Youtube, href: 'https://www.youtube.com/@jo9oct21', label: 'Youtube' },
+                    { icon: Youtube, href: 'https://www.youtube.com/@coderjo21', label: 'Youtube' },
                   ].map((social, index) => {
                     const Icon = social.icon;
                     return (

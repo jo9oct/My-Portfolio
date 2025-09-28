@@ -50,7 +50,7 @@ const projects = [
     type: "GitHub"
   },
   {
-    id: 3,
+    id: 4,
     title: "Library Management System",
     description: "Full-stack Library Management System solution with C#, RESTful API, ASP.NET and MySQL. Features include Borrow Book ,dashboard and admin dashboard.",
     image: "https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D",
@@ -58,6 +58,17 @@ const projects = [
     liveUrl: "#",
     githubUrl: "https://github.com/jo9oct/back-end-cs.git",
     category: "Back-End Web",
+    type: "GitHub"
+  },
+  {
+    id: 5,
+    title: "E-Commerce Website",
+    description: "Full-stack E-Commerce Website solution with Next.JS, RESTful API, Clerk, inngest and MongoDB. Features include Borrow Book ,dashboard and admin dashboard.",
+    image: "/E-commerce.png",
+    technologies: ["Next.JS", "RESTful-API", "MongoDB", "Clerk"],
+    liveUrl: "https://queck-chart-next.vercel.app/",
+    githubUrl: "https://github.com/jo9oct/Queck-Chart-Next.git",
+    category: "Full-Stack Web",
     type: "GitHub"
   },
 ];
@@ -86,6 +97,7 @@ export const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
+                loading='lazy'
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
               />
 

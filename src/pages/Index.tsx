@@ -6,7 +6,6 @@ import { Projects } from "@/components/section/Projects";
 import { Contact } from "@/components/section/Contact";
 import {About} from "@/components/section/About"
 import {Footer} from "@/components/layout/Footer"
-import {Testimonials} from "@/components/section/Testimonials";
 
 const Index = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -41,7 +40,6 @@ const Index = () => {
         <About/>
         <Skills />
         <Projects />
-        <Testimonials />
         <Contact />
       </main>
       <Footer/>
